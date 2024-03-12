@@ -15,6 +15,7 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
+	max-width: 1200px;
     width: 800px;
     margin: 0 auto;
     border: 3px solid #931420;
@@ -159,4 +160,51 @@ footer p {
 
 #nav_menu a:hover {
     color: yellow;
+}
+
+/* Slicknav css coding */
+
+#mobilemenu {
+	display: none;
+}
+
+@media only  screen and (max-width: 500px) {
+    body {
+        box-shadow: none;
+        font-size: 90%;
+
+    }
+}
+
+@media (max-width: 767px) {
+    #mobilemenu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        background-color: steelblue;
+    }
+
+    #nav_menu {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section, #nav_list, aside {
+        max-width: 95%;
+    }
+
+    #nav_list {
+        order: 2;
+    }
+}
+
+@media (max-width: 479px) {
+    header {
+        flex-direction: column;
+    }
 }
