@@ -16,7 +16,6 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
 	max-width: 1200px;
-    width: 800px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -168,43 +167,34 @@ footer p {
 	display: none;
 }
 
-@media only  screen and (max-width: 500px) {
-    body {
-        box-shadow: none;
-        font-size: 90%;
+@media(max-width: 900px){
+	body{
+		box-shadow: none;
+		font-size: 90%;
+	}
 
-    }
 }
 
-@media (max-width: 767px) {
-    #mobilemenu {
-        display: block;
-    }
+@media(max-width: 767px){
 
-    .slicknav_menu {
-        background-color: steelblue;
-    }
+	#mobilemenu{
+		display: block;
+	}
 
-    #nav_menu {
-        display: none;
-    }
+	.slicknav_menu{
+		background-color: #800000;
+	}
 
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
+	#nav_menu{
+		display: none;
+	}
 
-    section, #nav_list, aside {
-        max-width: 95%;
-    }
+	main{
+		flex-direction: column;
+	}
 
-    #nav_list {
-        order: 2;
-    }
-}
+	section,aside{
+		width: 95%;
 
-@media (max-width: 479px) {
-    header {
-        flex-direction: column;
-    }
+	}
 }
